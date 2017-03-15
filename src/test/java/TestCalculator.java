@@ -33,7 +33,6 @@ public class TestCalculator {
         this.result = result;
     }
 
-
     /*юнит тест:
       */
     @Test(timeout = 5000)
@@ -42,6 +41,16 @@ public class TestCalculator {
         int actualSum = calculator.getSum(x1, x2);
         int expectedSum = result;
         Assert.assertEquals("Method getSum is not valid", expectedSum, actualSum);}
+
+
+    @Test(timeout = 5000)
+    public void getMinusTest() {
+        Calculator calculator = new Calculator();
+        int actualSum = calculator.getMinus(x1, x2);
+        int expectedMinus = result;
+        Assert.assertEquals("Method getSum is not valid", expectedMinus, actualSum);}
+
+
 
 
     @After
